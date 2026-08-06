@@ -1,0 +1,293 @@
+/* ====================================
+   TABLET
+==================================== */
+
+@media (max-width:1024px){
+
+    .dashboard-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    .form-row{
+
+        flex-direction:column;
+        gap:12px;
+
+    }
+
+    .card{
+
+        padding:18px;
+
+    }
+
+}
+
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width:768px){
+
+    /* Sidebar */
+
+    .sidebar{
+
+        position:fixed;
+        left:-280px;
+        top:0;
+        width:280px;
+        height:100vh;
+        z-index:9999;
+        transition:.3s;
+
+    }
+
+    .sidebar.open{
+
+        left:0;
+
+    }
+
+    .sidebar-overlay{
+
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,.5);
+        display:none;
+        z-index:9998;
+
+    }
+
+    .sidebar-overlay.show{
+
+        display:block;
+
+    }
+
+    /* Dashboard */
+
+    .dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .kpi-card{
+
+        min-height:auto;
+
+    }
+
+    .kpi-value{
+
+        font-size:24px;
+
+    }
+
+    /* Cards */
+
+    .card{
+
+        padding:15px;
+
+    }
+
+    /* Forms */
+
+    .form-row{
+
+        flex-direction:column;
+
+    }
+
+    .form-control{
+
+        width:100%;
+
+    }
+
+    /* Chart Filters */
+
+    #compareCategoryWrapper{
+
+        width:100%;
+
+    }
+
+    #compareCategoryList{
+
+        max-height:200px;
+        overflow-y:auto;
+
+    }
+
+    /* Buttons */
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    /* Chart Buttons */
+
+    #printChartBtn,
+    #downloadChartBtn,
+    #pdfChartBtn{
+
+        width:auto;
+
+    }
+
+    /* Tables */
+
+    .table{
+
+        min-width:700px;
+
+    }
+
+    .table-wrapper{
+
+        overflow-x:auto;
+
+    }
+
+    /* Modal */
+
+    .modal-box{
+
+        width:95%;
+        max-width:none;
+
+        max-height:90vh;
+
+        overflow:auto;
+
+    }
+
+    /* Chart */
+
+    #dynamicChart{
+
+        max-height:350px;
+
+    }
+
+}
+
+
+/* ====================================
+   SMALL MOBILE
+==================================== */
+
+@media (max-width:480px){
+
+    .page-title{
+
+        font-size:18px;
+
+    }
+
+    .card-title{
+
+        font-size:15px;
+
+    }
+
+    .kpi-value{
+
+        font-size:20px;
+
+    }
+
+    .modal-box{
+
+        padding:15px;
+
+    }
+
+    #dynamicChart{
+
+        max-height:280px;
+
+    }
+
+    #compareCategoryList{
+
+        max-height:150px;
+
+    }
+
+}
+
+
+/* ====================================
+   EXTRA SMALL
+==================================== */
+
+@media (max-width:360px){
+
+    .btn{
+
+        font-size:13px;
+
+        padding:10px;
+
+    }
+
+    .form-control{
+
+        font-size:13px;
+
+    }
+
+    .kpi-value{
+
+        font-size:18px;
+
+    }
+
+}
+
+/* ====================================
+   CHART TOOLBAR MOBILE
+==================================== */
+
+.chart-toolbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+
+}
+
+.chart-toolbar-right{
+
+    display:flex;
+    gap:10px;
+
+}
+
+@media (max-width:768px){
+
+    .chart-toolbar{
+
+        flex-direction:column;
+        align-items:stretch;
+
+    }
+
+    .chart-toolbar-right{
+
+        flex-wrap:wrap;
+
+    }
+
+}
