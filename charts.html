@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 </head>
@@ -254,52 +255,49 @@
 				</div>
 
 			</div>
-			<div
-				style="
-					display:flex;
-					justify-content:space-between;
-					align-items:center;
-				">
-             <div>
-			 <button
-                id="generateChartBtn"
-                class="btn btn-primary">
+			<div class="chart-toolbar">
 
-                Generate Chart
+				<div class="chart-toolbar-left">
 
-            </button>
+					<button
+						id="generateChartBtn"
+						class="btn btn-primary">
+
+						Generate Chart
+
+					</button>
+
+				</div>
+
+				<div class="chart-toolbar-right">
+
+					<button
+						id="printChartBtn"
+						class="btn btn-secondary">
+
+						🖨 Print
+
+					</button>
+
+					<button
+						id="downloadChartBtn"
+						class="btn btn-success">
+
+						🖼 PNG
+
+					</button>
+
+					<button
+						id="pdfChartBtn"
+						class="btn btn-danger">
+
+						📄 PDF
+
+					</button>
+
+				</div>
+
 			</div>
-			<div
-				style="
-					 display:flex;
-					gap:10px;
-					">
-			<button
-				id="printChartBtn"
-				class="btn btn-secondary"">
-
-				🖨 Print
-
-			</button>
-
-			<button
-				id="downloadChartBtn"
-				class="btn btn-success">
-
-				🖼 PNG
-
-			</button>
-
-			<button
-				id="pdfChartBtn"
-				class="btn btn-danger">
-
-				📄 PDF
-
-			</button>
-			</div>
-
-        </div>
 
     </div>
    <div class="card">
