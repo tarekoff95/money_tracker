@@ -223,9 +223,7 @@ textarea.form-control {
 
 /* ========= TABLE ========= */
 
-.table-container {
-    overflow-x: auto;
-}
+
 
 .table {
     width: 100%;
