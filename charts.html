@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Manager Pro</title>
+    <title>Expense Manager For Tarek</title>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -155,6 +155,14 @@
     <div class="card">
 
         <div class="form-row">
+					
+			<h3 class="mb-10">
+				Generate Charts
+			</h3>
+		
+			<label class="form-label">
+                   Chart Type
+			</label>
 
             <select
                 id="chartType"
@@ -180,27 +188,34 @@
                     Clustered Column - Line Chart
                 </option>
 
-            </select>
+				</select>
 
-            <select
-                id="chartDataType"
-                class="form-control">
-				
-                <option value="expense">
-                    Expense
-                </option>
+				<label class="form-label">
+					 Transaction Type
+				</label>
+				<select
+					id="chartDataType"
+					class="form-control">
+					
+					<option value="expense">
+						Expense
+					</option>
 
-                <option value="income">
-                    Income
-                </option>
+					<option value="income">
+						Income
+					</option>
 
-				<option value="all">
-                   Clustered
-                </option>                
+					<option value="all">
+					   Clustered
+					</option>                
 
-            </select>
+				</select>
 
-            <select
+				<label class="form-label">
+					 Period
+				</label>
+
+				<select
                 id="chartRange"
                 class="form-control">
 				
