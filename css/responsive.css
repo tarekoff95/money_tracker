@@ -157,3 +157,22 @@ EXTRA SMALL
     }
 
 }
+
+
+@media (max-width:768px){
+
+.dashboard-row{
+    display:block !important;
+}
+
+.dashboard-row .card{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.table-container{
+    width:100% !important;
+    overflow-x:auto;
+}
+
+}
