@@ -1,54 +1,37 @@
 /* ====================================
-   TABLET
+TABLET
 ==================================== */
 
 @media (max-width:1024px){
 
     .dashboard-grid{
-
-        grid-template-columns:
-        repeat(2,1fr);
-
+        grid-template-columns:repeat(2,1fr);
     }
 
     .form-row{
-
         flex-direction:column;
         gap:12px;
-
-    }
-
-    .card{
-
-        padding:18px;
-
     }
 
 }
 
-
 /* ====================================
-   MOBILE
+MOBILE
 ==================================== */
 
 @media (max-width:768px){
 
-
-    .chart-toolbar{
-
-        flex-direction:column;
-        align-items:stretch;
-
+    .content{
+        padding:15px;
     }
 
-    .chart-toolbar-right{
-
-        flex-wrap:wrap;
-
+    .dashboard-grid{
+        grid-template-columns:1fr;
     }
 
-
-    /* Sidebar */
+    .dashboard-row{
+        grid-template-columns:1fr;
+    }
 
     .sidebar{
         position:fixed;
@@ -61,235 +44,116 @@
     }
 
     .sidebar.open{
-
         left:0;
-
     }
 
     .sidebar-overlay{
-
         position:fixed;
         inset:0;
         background:rgba(0,0,0,.5);
         display:none;
         z-index:9998;
-
     }
 
     .sidebar-overlay.show{
-
         display:block;
-
     }
 
-    /* Dashboard */
-
-    .dashboard-grid{
-
-        grid-template-columns:1fr;
-
+    .card{
+        width:100%;
+        min-width:0;
     }
-
-	.dashboard-row{
-        grid-template-columns:1fr;
-    }
-
-    .kpi-card{
-
-        min-height:auto;
-
-    }
-
-    .kpi-value{
-
-        font-size:24px;
-
-    }
-
-    /* Cards */
-
- 
-  .chart-box{
-        height:350px;
-    }
-    /* Forms */
 
     .form-row{
-
         flex-direction:column;
-
-    }
-	  .chart-wrapper{
-        height:300px;
     }
 
     .form-control{
-
         width:100%;
-
     }
 
-    /* Chart Filters */
-
-    #compareCategoryWrapper{
-
-        width:100%;
-
+    .chart-box{
+        height:350px;
     }
 
-    #compareCategoryList{
-
-        max-height:200px;
-        overflow-y:auto;
-
+    .chart-wrapper{
+        height:300px;
     }
 
-    /* Buttons */
-
-    .btn{
-
-        width:100%;
-
+    canvas{
+        max-width:100% !important;
     }
 
-    /* Chart Buttons */
-
-    #printChartBtn,
-    #downloadChartBtn,
-    #pdfChartBtn{
-
-        width:auto;
-
+    .chart-toolbar{
+        flex-direction:column;
+        align-items:stretch;
     }
 
-    /* Tables */
+    .chart-toolbar-right{
+        flex-wrap:wrap;
+    }
 
-
-
+    /* TABLE */
     .table{
         min-width:500px;
         width:max-content;
     }
 
-
-    /* Modal */
-
+    /* MODAL */
     .modal-box{
-
         width:95%;
         max-width:none;
-
         max-height:90vh;
-
         overflow:auto;
-
-    }
-
-    /* Chart */
-
-    #dynamicChart{
-
-        max-height:350px;
-
     }
 
 }
 
-
-    .content{
-        padding:15px;
-    }
-
 /* ====================================
-   SMALL MOBILE
+SMALL MOBILE
 ==================================== */
 
 @media (max-width:480px){
 
     .page-title{
-
         font-size:18px;
-
     }
 
     .card-title{
-
         font-size:15px;
-
     }
 
     .kpi-value{
-
         font-size:20px;
-
     }
 
     .modal-box{
-
         padding:15px;
-
     }
 
     #dynamicChart{
-
         max-height:280px;
-
-    }
-
-    #compareCategoryList{
-
-        max-height:150px;
-
     }
 
 }
 
-
 /* ====================================
-   EXTRA SMALL
+EXTRA SMALL
 ==================================== */
 
 @media (max-width:360px){
 
     .btn{
-
         font-size:13px;
-
         padding:10px;
-
     }
 
     .form-control{
-
         font-size:13px;
-
     }
 
     .kpi-value{
-
         font-size:18px;
-
     }
 
 }
-
-/* ====================================
-   CHART TOOLBAR MOBILE
-==================================== */
-
-.chart-toolbar{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:10px;
-
-}
-
-.chart-toolbar-right{
-
-    display:flex;
-    gap:10px;
-
-}
-
