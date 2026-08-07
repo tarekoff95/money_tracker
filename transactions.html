@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transactions - Expense Manager</title>
+    <title>Expense Manager For Tarek</title>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -147,163 +147,136 @@
         <section class="content">
 
             <!-- Add Transaction -->
+			    <div class="card">
+					<div class="form-row">
+					
+						<h3 class="mb-10">
+							Add New Transaction
+						</h3>
 
-            <div class="card mb-20">
+						<label class="form-label">
+							Transaction Type
+						</label>
 
-                <h3 class="mb-20">
-                    Add New Transaction
-                </h3>
+						<select
+							class="form-control"
+							id="transactionType">
 
-                <div class="form-group">
+							<option value="income">
+								Income
+							</option>
 
-                    <label class="form-label">
-                        Transaction Type
-                    </label>
+							<option value="expense">
+								Expense
+							</option>
 
-                    <select
-                        class="form-control"
-                        id="transactionType">
+						</select>
+						
+						<label class="form-label">
+							Date
+						</label>
 
-                        <option value="income">
-                            Income
-                        </option>
+						<input
+							type="date"
+							class="form-control"
+							id="transactionDate">
+					
 
-                        <option value="expense">
-                            Expense
-                        </option>
+						<label class="form-label">
+							Category
+						</label>
 
-                    </select>
+						<select
+							class="form-control"
+							id="transactionCategory">
 
-                </div>
+						</select>
+						
+						<label class="form-label">
+							Account
+						</label>
 
-                <div class="form-group">
+						<select
+							class="form-control"
+							id="transactionAccount">
+						</select>
 
-                    <label class="form-label">
-                        Date
-                    </label>
+						<label class="form-label">
+							Amount
+						</label>
 
-                    <input
-                        type="date"
-                        class="form-control"
-                        id="transactionDate">
+						<input
+							type="number"
+							class="form-control"
+							id="transactionAmount"
+							placeholder="Enter amount">
 
-                </div>
-
-                <div class="form-group">
-
-                    <label class="form-label">
-                        Category
-                    </label>
-
-                    <select
-                        class="form-control"
-                        id="transactionCategory">
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label class="form-label">
-                        Account
-                    </label>
-
-                    <select
-                        class="form-control"
-                        id="transactionAccount">
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label class="form-label">
-                        Amount
-                    </label>
-
-                    <input
-                        type="number"
-                        class="form-control"
-                        id="transactionAmount"
-                        placeholder="Enter amount">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label class="form-label">
+						<label class="form-label">
                         Note
-                    </label>
+						</label>
 
-                    <textarea
-                        class="form-control"
-                        id="transactionNote"></textarea>
+						<textarea
+							class="form-control"
+							id="transactionNote"></textarea>
+	
+						<button
+							class="btn btn-primary"
+							id="saveTransactionBtn">
 
-                </div>
+							Save Transaction
+						</button>               
+							
+				</div>
+				</div>
+			<!-- Filters -->
 
-                <button
-                    class="btn btn-primary"
-                    id="saveTransactionBtn">
+				<div class="card">
 
-                    Save Transaction
+					<h3 class="mb-20">
+						Search & Filter
+					</h3>
+					
+					<input
+						type="text"
+						class="form-control"
+						id="searchInput"
+						placeholder="Search...">
 
-                </button>
+				   <select
+						class="form-control"
+						id="filterType">
 
-            </div>
+						<option value="all">
+							All Transactions
+						</option>
 
-            <!-- Filters -->
+						<option value="income">
+							Income
+						</option>
 
-            <div class="card mb-20">
+						<option value="expense">
+							Expense
+						</option>
 
-                <h3 class="mb-20">
-                    Search & Filter
-                </h3>
+					</select>
 
-                <div class="form-group">
+				</div>
 
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="searchInput"
-                        placeholder="Search...">
+				<!-- Transaction Table -->
 
-                </div>
-
-                <div class="form-group">
-
-                    <select
-                        class="form-control"
-                        id="filterType">
-
-                        <option value="all">
-                            All Transactions
-                        </option>
-
-                        <option value="income">
-                            Income
-                        </option>
-
-                        <option value="expense">
-                            Expense
-                        </option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-            <!-- Transaction Table -->
-
-            <div class="card">
-
-
-				<div class="table-header">
-
-						<h3>Transaction List</h3>
-
+				<div class="card">
+					<h3>Transaction List</h3>
+					
+					<div
+						style="
+							display:flex;
+							flex-direction:row;
+							gap:10px;
+							align-items:center;
+							justify-content:flex-end;
+							flex-wrap:nowrap;
+					">
+					
 						<div class="table-filter">
 
 							<div class="filter-group">
@@ -316,50 +289,48 @@
 								<input type="date" id="toDate"></label>
 							</div>
 
-						</div>
+						</div>					
+					</div>
+					
+					<div class="table-container">
+					
+						<table class="table">
+						
+							<thead>
+							
+								<tr>
+									<th>Date</th>
+									<th>Type</th>
+									<th>Category</th>
+									<th>Account</th>
+									<th>Amount</th>
+									<th>Note</th>
+									<th>Action</th>
+								</tr>
+								
+							</thead>
 
-					</div>	
+							<tbody id="transactionTableBody">
 
-                <div class="table-container">
+								<tr>
 
-                    <table class="table">
+									<td colspan="7"
+										class="text-center">
 
-                        <thead>
+										No transactions found
 
-						<tr>
-							<th>Date</th>
-							<th>Type</th>
-							<th>Category</th>
-							<th>Account</th>
-							<th>Amount</th>
-							<th>Note</th>
-							<th>Action</th>
-						</tr>
+									</td>
 
-                        </thead>
+								</tr>
 
-                        <tbody id="transactionTableBody">
+							</tbody>
 
-                            <tr>
+						</table>
 
-                                <td colspan="7"
-                                    class="text-center">
-
-                                    No transactions found
-
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-            </div>
-
-        </section>
+					</div>
+				</div>
+					
+			</section>
 
     </main>
 
