@@ -754,10 +754,11 @@ Expense Filter
     }
 
 }
+
 .table-container{
-    max-height: 500px;      /* প্রায় 10 row */
-    overflow-y: auto;
-    overflow-x: hidden;
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
 }
 
 .table{
