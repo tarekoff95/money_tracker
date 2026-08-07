@@ -225,12 +225,13 @@ textarea.form-control {
 
 
 
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--surface);
+.table{
+    width:100%;
+    border-collapse:collapse;
 }
-
+.table-scroll{
+    min-width:700px;
+}
 .table th {
     background: #f1f5f9;
     color: var(--text);
@@ -756,6 +757,7 @@ Expense Filter
 .table-container{
     width:100%;
     overflow-x:auto;
+    overflow-y:hidden;
     -webkit-overflow-scrolling:touch;
 }
 
