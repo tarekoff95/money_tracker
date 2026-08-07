@@ -164,16 +164,16 @@
 
     /* Tables */
 
-.table-container{
-    width:100%;
-    overflow-x:auto;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-}
+    .table-container{
+        display:block;
+        width:100%;
+        overflow-x:auto;
+    }
 
-.table{
-	 min-width:700px;
-}
+    .table{
+        min-width:700px;   /* 3 column account table */
+        width:max-content;
+    }
     .table-wrapper{
 
         overflow-x:auto;
