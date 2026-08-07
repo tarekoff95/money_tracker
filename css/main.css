@@ -726,6 +726,17 @@ Expense Filter
 
 }
 
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+.transaction-table{
+    width:100%;
+    min-width:700px;
+}
+
 .history-summary {
 
     margin-top: 15px;
@@ -753,14 +764,6 @@ Expense Filter
     }
 
 }
-
-.table-container{
-    width:100%;
-    overflow-x:auto;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-}
-
 
 
 .table-wrapper{
