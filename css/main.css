@@ -761,8 +761,11 @@ Expense Filter
 }
 
 .table{
-    width:100%;
-    border-collapse: collapse;
+    min-width:700px;
+}
+
+.table-wrapper{
+    overflow-x:auto;
 }
 
 .table thead th{
