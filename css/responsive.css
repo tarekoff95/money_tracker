@@ -169,7 +169,17 @@
         min-width:700px;
 
     }
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+}
 
+.table{
+    width:100%;
+    min-width:700px;
+}
     .table-wrapper{
 
         overflow-x:auto;
