@@ -170,11 +170,7 @@
         min-width:500px;
         width:max-content;
     }
-.table-container{
-    width:100%;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-}
+
 
     /* Modal */
 
