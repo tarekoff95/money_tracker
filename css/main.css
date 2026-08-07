@@ -762,7 +762,14 @@ Expense Filter
 
 .table{
     width:100%;
-    border-collapse: collapse;
+    min-width:700px;
+    border-collapse:collapse;
+}
+
+.table-responsive{
+    width:100%;
+    max-width:100%;
+    overflow-x:auto;
 }
 
 .table thead th{
@@ -771,6 +778,7 @@ Expense Filter
     background: #fff;
     z-index: 2;
 }
+
 
 .btn-secondary{
 
