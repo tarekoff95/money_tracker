@@ -172,8 +172,7 @@
 }
 
 .table{
-        min-width:unset !important;
-        width:100%;
+	 min-width:700px;
 }
     .table-wrapper{
 
