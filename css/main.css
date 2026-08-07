@@ -759,9 +759,7 @@ Expense Filter
     -webkit-overflow-scrolling:touch;
 }
 
-.table{
-    min-width:700px;
-}
+
 
 .table-wrapper{
     overflow-x:auto;
