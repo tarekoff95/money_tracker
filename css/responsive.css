@@ -30,12 +30,7 @@
 /* ====================================
    MOBILE
 ==================================== */
-.table-container{
-    width:100%;
-    overflow-x:auto;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-}
+
 @media (max-width:768px){
 
 
@@ -169,14 +164,10 @@
 
     /* Tables */
 
-    .table-container{
-        display:block;
-        width:100%;
-        overflow-x:auto;
-    }
+
 
     .table{
-        min-width:700px;   /* 3 column account table */
+        min-width:500px;
         width:max-content;
     }
     .table-wrapper{
