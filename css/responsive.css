@@ -90,6 +90,10 @@
 
     }
 
+	.dashboard-row{
+        grid-template-columns:1fr;
+    }
+
     .kpi-card{
 
         min-height:auto;
