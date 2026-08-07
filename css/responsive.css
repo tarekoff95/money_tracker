@@ -172,8 +172,8 @@
 }
 
 .table{
-    width:100%;
-    min-width:700px;
+        min-width:unset !important;
+        width:100%;
 }
     .table-wrapper{
 
